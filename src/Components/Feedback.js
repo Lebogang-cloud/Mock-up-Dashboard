@@ -9,14 +9,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyle = makeStyles((theme) => ({
     root: {
-        minWidth: 275,
-        margin: "30px",
+        Width: '100%',
+        marginTop: "10px",
+        marginLeft: "10px",
+      
         background: theme.background,
         border: 0,
         borderRadius:3,
         boxShadow:theme.boxShadow,
         color: 'white',
-        padding: '0 10px'
+        
     },
    
     title: {
@@ -31,20 +33,19 @@ const useStyle = makeStyles((theme) => ({
         fontVariant:'h1'
         
     },
-    cards:{
-        padding:theme.spacing(1),
-        color:theme.palette.text.secondary
-    }
+    card:{
+        maxWidth:300
+    },
 
 }));
 
 export default function Feedback(){
     const classes = useStyle();
     
-    return(    
-        <Card className={classes.root} variant="Outlined">
+    return(  
+        <div className={classes.root}>
+        <Card className={classes.card} variant="Outlined">
             <CardContent>
-                <Typography className={classes.heading} color="textPrimary">FEEDBACK</Typography>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
                     Topic: 
                     <br></br>
@@ -71,6 +72,7 @@ export default function Feedback(){
             </CardActions>
             
         </Card>
+        </div>
         
     )
 }

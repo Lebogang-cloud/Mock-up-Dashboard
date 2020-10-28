@@ -8,14 +8,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyle = makeStyles((theme) => ({
     root: {
-        minWidth: 275,
-        margin: "30px",
+        Width: '100%',
+        marginTop: "10px",
+        marginLeft: "10px",
+        marginBottom: "40px",
         background: theme.background,
         border: 0,
         borderRadius:3,
         boxShadow:theme.boxShadow,
         color: 'white',
-        padding: '0 10px'
+        
     },
    
     title: {
@@ -29,7 +31,10 @@ const useStyle = makeStyles((theme) => ({
         fontSize:'25px',
         fontVariant:'h1'
         
-    }
+    },
+    card:{
+        maxWidth:300
+    },
 
 }));
 
@@ -37,9 +42,9 @@ export default function AssignedCard(){
     const classes = useStyle();
     
     return(    
-        <Card className={classes.root} variant="Outlined">
+        <div className={classes.root}>
+        <Card className={classes.card} variant="Outlined">
             <CardContent>
-                <Typography className={classes.heading} color="textPrimary">CARD ASSIGNED</Typography>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
                     Topic: 
                     <br></br>
@@ -54,6 +59,8 @@ export default function AssignedCard(){
                 </Typography>
                 </CardContent>
                 <CardActions>
+                    <br/>
+                    <br/>
                 <Button size="medium">VIEW CONTENT</Button>
                 <br/>
                 <br></br>
@@ -63,6 +70,7 @@ export default function AssignedCard(){
             </CardActions>
             
         </Card>
+        </div>
         
     )
 

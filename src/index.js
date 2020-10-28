@@ -11,18 +11,34 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <Grid container spacing={2} direction="row"
-      style={{padding: '5px'}}>
-        <Grid items xs= {16} sm={4} md={4} lg={4} xl={4}>
+      <Grid container spacing={2} 
+      style={{padding: '24px'}}>
+        
+        <Grid items xs= {12} md={3} >
+          <h2>ASSIGNED CARD</h2>
+          <AssignedCard/>
+          <AssignedCard/>
           <AssignedCard/>
           </Grid>
-          <Grid items xs= {16} sm={4} md={4} lg={4} xl={4}>
+          
+          <Grid items xs= {12} md={3}  >
+            <h2>REQUESTED REVIEW</h2>
+          <RequestReview/>
+          <RequestReview/>
           <RequestReview/>
           </Grid>
-          <Grid items xs= {16} sm={4} md={4} lg={4} xl={4}>
+          
+          <Grid items xs= {12} md={3}  >
+            <h2>FEEDBACK</h2>
+          <Feedback/>
+          <Feedback/>
           <Feedback/>
           </Grid>
-          <Grid items xs= {16} sm={4} md={4} lg={4} xl={4}>
+          
+          <Grid items xs= {12}  md={3}>
+            <h2>COMPLETE</h2>
+          <Complete/>
+          <Complete/>
           <Complete/>
           </Grid>
         </Grid>
