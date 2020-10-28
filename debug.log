@@ -1,2 +1,4 @@
 [1015/150848.825:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1019/104042.416:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1021/121410.976:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Nandi Marafane\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\2b0e1a1a-ad62-4649-82b2-b88f9f9c8c0d: The system cannot find the path specified. (0x3)
+[1021/121957.212:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Nandi Marafane\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\7e0e7dff-7210-4cf2-9284-9c01643035ff: The system cannot find the path specified. (0x3)
