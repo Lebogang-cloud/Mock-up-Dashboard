@@ -17,7 +17,7 @@ class Header extends Component{
                 textAlign: 'right'
             },
             input:{
-                marginLeft: '1170px'
+                marginLeft: '1150px'
             }
         }
         return (

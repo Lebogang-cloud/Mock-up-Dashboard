@@ -6,16 +6,17 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 const useStyle = makeStyles((theme) => ({
     root: {
         minWidth: 275,
-        margin: "100px",
+        margin: "30px",
         background: theme.background,
         border: 0,
         borderRadius:3,
         boxShadow:theme.boxShadow,
         color: 'white',
-        padding: '0 30px'
+        padding: '0 10px'
     },
    
     title: {
@@ -29,6 +30,10 @@ const useStyle = makeStyles((theme) => ({
         fontSize:'25px',
         fontVariant:'h1'
         
+    },
+    cards:{
+        padding:theme.spacing(1),
+        color:theme.palette.text.secondary
     }
 
 }));
